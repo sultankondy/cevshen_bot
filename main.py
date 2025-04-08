@@ -18,7 +18,7 @@ ranges = ["1-15", "16-30", "31-45", "46-60", "61-75", "76-90", "91-100 + dua"]
 def generate_poll_options():
     today = datetime.date.today()
     weekday = today.weekday()  # 0=Monday, 1=Tuesday, ..., 6=Sunday
-    sultan_index = names.index("Sultan")
+    sultan_index = names.index("Rustem")
     shift = (sultan_index - ((weekday - 2) % 7)) % 7
 
     # Rotate names
