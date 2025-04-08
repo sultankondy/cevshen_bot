@@ -25,7 +25,7 @@ def generate_poll_options():
     rotated_names = names[shift:] + names[:shift]
 
     # Fixed range order (1-15, 16-30, 31-45, 46-60, 61-75, 76-90, 91-100 + dua)
-    ordered_ranges = ranges.copy()
+    ordered_ranges = ranges
 
     # Combine rotated names with ordered ranges
     options = [f"{name} {rng}" for name, rng in zip(rotated_names, ordered_ranges)]
