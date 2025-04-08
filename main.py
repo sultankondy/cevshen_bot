@@ -19,7 +19,7 @@ def generate_poll_options():
     today = datetime.date.today()
     weekday = today.weekday()  # 0=Monday, 1=Tuesday, ..., 6=Sunday
     sultan_index = names.index("Sultan")
-    shift = (sultan_index - ((weekday - 2) % 7)) % 7
+    shift = (sultan_index - ((weekday - 1) % 7)) % 7
 
     # Rotate names
     rotated_names = names[shift:] + names[:shift]
